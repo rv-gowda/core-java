@@ -1,0 +1,35 @@
+class FMRadioRunner {
+
+    public static void main(String[] args) {
+
+        // turnOnOrOff – 2 times
+        FMRadio.turnOnOrOff(true);
+        FMRadio.turnOnOrOff(false);
+
+        System.out.println("-------------------");
+
+        // setFrequency – 3 times
+        FMRadio.setFrequency(95.5f);
+        FMRadio.setFrequency(107.9f);
+        FMRadio.setFrequency(120.0f);   // invalid
+
+        System.out.println("-------------------");
+
+        // increaseVolume – 2 times
+        FMRadio.increaseVolume(5);
+        FMRadio.increaseVolume(15);     // invalid
+
+        System.out.println("-------------------");
+
+        // decreaseVolume – 2 times
+        FMRadio.decreaseVolume(3);
+        FMRadio.decreaseVolume(20);     // invalid
+
+        System.out.println("-------------------");
+
+        // saveStation – 3 times
+        FMRadio.saveStation("Radio Mirchi");
+        FMRadio.saveStation("Red FM");
+        FMRadio.saveStation("");        // invalid
+    }
+}

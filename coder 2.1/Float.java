@@ -1,0 +1,87 @@
+class FloatRunner{
+	public static void main(String args[]){
+	float F1=4.82f;
+	System.out.println(F1);
+	F1=1.3f;
+	System.out.println(F1);
+	float F2=1.861f;
+	System.out.println(F2);
+	F2=7.2f;
+	System.out.println(F2);
+	float F3=42.4f;
+	System.out.println(F3);
+	F3=4.633f;
+	System.out.println(F3);
+	float F4=42.1381f;
+	System.out.println(F4);
+	F4=-442.4312f;
+	System.out.println(F4);
+	float F5=-4724.89f;
+	System.out.println(F5);
+	F5=-1181.7311f;
+	System.out.println(F5);
+	float F6=-27427.4f;
+	System.out.println(F6);
+	F6=-242.48f;
+	System.out.println(F6);
+	float F7=92848.41f;
+	System.out.println(F7);
+	F7=-248.24f;
+	System.out.println(F7);
+	float F8=447.242f;
+	System.out.println(F8);
+	F8=4242.2424f;
+	System.out.println(F8);
+	float F9=-224221.1f;
+	System.out.println(F9);
+	F9=42.24222f;
+	System.out.println(F9);
+	float F10=921249.9f;
+	System.out.println(F10);
+	F10=-242.4f;
+	System.out.println(F10);
+	float F11=-2424.24f;
+	System.out.println(F11);
+	F11=313.1313f;
+	System.out.println(F11);
+	float F12=-44.242f;
+	System.out.println(F12);
+	F12=-33133.221f;
+	System.out.println(F12);
+	float F13=31.44141f;
+	System.out.println(F13);
+	F13=-424242.42f;
+	System.out.println(F13);
+	float F14=421.2122f;
+	System.out.println(F14);
+	F14=4441.14f;
+	System.out.println(F14);
+	float F15=-251.335f;
+	System.out.println(F15);
+	F15=-2251.322f;
+	System.out.println(F5);
+	float F16=96.86f;
+	System.out.println(F16);
+	F16=428.42f;
+	System.out.println(F16);
+	float F17=858.545f;
+	System.out.println(F17);
+	F17=4242.42f;
+	System.out.println(F17);
+	float F18=-252.5f;
+	System.out.println(F18);
+	F18=-131.444f;
+	System.out.println(F18);
+	float F19=1133.1f;
+	System.out.println(F19);
+	F19=1411.4f;
+	System.out.println(F19);
+	float F20=31414.1f;
+	System.out.println(F20);
+	F20=224242f;
+	System.out.println(F20);
+	}
+	
+	
+	
+}
