@@ -1,0 +1,3 @@
+enum WarrantyYears {
+	ONE_YEAR, TWO_YEARS, THREE_YEARS, FIVE_YEARS
+}

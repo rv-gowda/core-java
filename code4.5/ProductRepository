@@ -1,0 +1,98 @@
+class ProductRepository {
+
+	Product[] products = new Product[200];
+	int index = 0;
+
+	// 1. Save one product
+	void save(Product product) {
+		if (product != null && index < products.length) {
+			products[index] = product;
+			index++;
+		}
+	}
+
+	// 2. Save multiple (max 10)
+	void save(Product[] productsArr) {
+		if (productsArr != null && productsArr.length <= 10) {
+			for (Product p : productsArr) {
+				save(p);
+			}
+		}
+	}
+
+	// 3. Search by Unique ID
+	Product searchByUniqueId(int id) {
+		for (Product p : products) {
+			if (p != null && p.uniqueId == id) {
+				return p;
+			}
+		}
+		return null;
+	}
+
+	// 4. Search by ID and Name
+	Product searchByUniqueIdAndName(int id, String name) {
+		for (Product p : products) {
+			if (p != null && p.uniqueId == id && p.name.equals(name)) {
+				return p;
+			}
+		}
+		return null;
+	}
+
+	// 5. Search by ID, Name, Country
+	Product searchByUniqueIdAndNameAndOriginCountry(int id, String name, String country) {
+		for (Product p : products) {
+			if (p != null && p.uniqueId == id &&
+				p.name.equals(name) &&
+				p.originCountry.equals(country)) {
+				return p;
+			}
+		}
+		return null;
+	}
+
+	// 6. Get all origin countries
+	void getAllOriginCountry() {
+		for (Product p : products) {
+			if (p != null) {
+				System.out.println(p.originCountry);
+			}
+		}
+	}
+
+	// 7. Check warranty expired
+	void checkWarrantyExpiredByUniqueId(int id) {
+		Product p = searchByUniqueId(id);
+		if (p != null) {
+			System.out.println("Warranty expired: " + p.warrantyExpired);
+		}
+	}
+
+	// 8. Display all products
+	void displayAllProducts() {
+		for (Product p : products) {
+			if (p != null) {
+				p.display();
+			}
+		}
+	}
+
+	// 9. Get all by type
+	void getAllByType(ProductType type) {
+		for (Product p : products) {
+			if (p != null && p.type == type) {
+				p.display();
+			}
+		}
+	}
+
+	// 10. Get all by warranty years
+	void getAllByWarrantyYears(WarrantyYears years) {
+		for (Product p : products) {
+			if (p != null && p.warrantyYears == years) {
+				p.display();
+			}
+		}
+	}
+}
